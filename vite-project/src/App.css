@@ -12,7 +12,6 @@ body {
 
 .container {
   border: solid white;
-  background-color: rgb(205, 205, 205);
   width: 75vw;
   margin: 20px;
   padding: 20px;
@@ -20,8 +19,20 @@ body {
 
 .container p {
   border: dotted black;
-  background-color: rgb(8, 67, 123);
+  background-color: darkslategray;
   cursor: grab;
   text-align: center;
   padding: 10px;
+}
+
+.drag {
+  opacity: 50%;
+  }
+
+.redWrapper {
+  background-color: maroon;
+}
+
+.blueWrapper {
+  background-color: darkblue;
 }

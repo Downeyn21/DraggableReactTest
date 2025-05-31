@@ -1,22 +1,31 @@
-
+import { useState } from 'react';
 import './App.css'
+import FirstTry from './Components/FirstTry';
+import SecondTry from './Components/SecondTry';
 
 function App() {
+  const [dragItem, setDragItem] = useState('')
+  const [position, setPosition] = useState({ x:0, y:0 })
 
-  draggable.array.forEach(element => {
+  function dragStart(e, item) {
+    setDragItem(item)
+    console.log(e.clientX);
     
-  });
+  }
+
+  function dragEnd() {
+    setDragItem('')
+  }
+
+  function dragEnter(e ,container) {
+    e.preventDefault
+    
+  }
 
   return (
     <>
-    <div className='container'>
-      <p className='draggable' draggable='true' >Tomato</p>
-      <p className='draggable' draggable='true' >Potato</p>
-    </div>
-    <div className='container'>
-      <p className='draggable' draggable='true' >Orange</p>
-      <p className='draggable' draggable='true' >Peach</p>
-    </div>
+      {/* <FirstTry /> */}
+      <SecondTry />
     </>
   )
 }
