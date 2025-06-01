@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './App.css'
 import FirstTry from './Components/FirstTry';
 import SecondTry from './Components/SecondTry';
+import FullMotionDrag from './Components/FullMotionDrag';
 
 function App() {
   const [dragItem, setDragItem] = useState('')
@@ -25,7 +26,8 @@ function App() {
   return (
     <>
       {/* <FirstTry /> */}
-      <SecondTry />
+      {/* <SecondTry /> */}
+      <FullMotionDrag />
     </>
   )
 }
